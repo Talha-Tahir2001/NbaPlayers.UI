@@ -1,0 +1,87 @@
+<div *ngIf="player" class="form-wrapper">
+<mat-card>
+  <h2>{{ player.nickName }}</h2>
+
+  <div>
+    <mat-form-field appearance="fill">
+      <mat-label>Nick Name</mat-label>
+      <input
+        matInput
+        [(ngModel)]="player.nickName"
+        placeholder="Nick Name"
+        id="nickName"
+        name="nickName"
+      />
+    </mat-form-field>
+  </div>
+
+  <div>
+    <mat-form-field appearance="fill">
+      <mat-label>First Name</mat-label>
+      <input
+        matInput
+        [(ngModel)]="player.firstName"
+        placeholder="First Name"
+        id="firstName"
+        name="firstName"
+      /> 
+    </mat-form-field>
+  </div>
+
+  <div>
+    <mat-form-field appearance="fill">
+      <mat-label>Last Name</mat-label>
+      <input
+        matInput
+        [(ngModel)]="player.lastName"
+        placeholder="Last Name"
+        id="lastName"
+        name="lastName"
+      />
+    </mat-form-field>
+  </div>
+
+  <div>
+    <mat-form-field appearance="fill">
+      <mat-label>Team Name</mat-label>
+      <input
+        matInput
+        [(ngModel)]="player.team"
+        placeholder="Team Name"
+        id="teamName"
+        name="teamName"
+      />
+    </mat-form-field>
+  </div>
+
+
+  
+  <button
+    type="button"
+    mat-raised-button
+    color="primary"
+    (click)="updatePlayer(player)"
+    *ngIf="player.id"
+  >
+    Save
+  </button>
+  <button
+    type="button"
+    mat-raised-button
+    color="secondary"
+    (click)="deletePlayer(player)"
+    *ngIf="player.id"
+  >
+    Delete
+  </button>
+  <button
+    type="button"
+    mat-raised-button
+    color="primary"
+    (click)="createPlayer(player)"
+    *ngIf="!player.id"
+  >
+    Create
+  </button>
+</mat-card>
+</div>

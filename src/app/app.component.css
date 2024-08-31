@@ -1,0 +1,19 @@
+/* App container to center and control the width */
+.app-container {
+    max-width: 900px; /* Set maximum width for the card */
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Optional: Add padding for spacing */
+  }
+  
+  /* Button styling */
+  button[mat-raised-button] {
+    display: block;
+    margin: 0 auto 20px auto; /* Center the button and add margin below it */
+  }
+  
+  /* Table styling */
+  table {
+    width: 100%; /* Ensure the table takes full width of the container */
+    margin-bottom: 20px; /* Add margin below the table */
+  }
+  

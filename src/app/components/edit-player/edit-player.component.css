@@ -1,0 +1,35 @@
+.mat-button-base{
+    margin: 8px 8px 8px 0;
+}
+
+/* Center the card within the viewport */
+.form-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height of the viewport */
+    background-color: #f4f4f4; /* Light background color */
+  }
+  
+  /* Style the card */
+  mat-card {
+    max-width: 600px; /* Maximum width for the form */
+    width: 100%; /* Ensure it takes full width up to the max width */
+    padding: 20px; /* Add padding inside the card */
+    margin: 20px; /* Margin around the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    background-color: #ffffff; /* White background for the card */
+    border-radius: 8px; /* Slightly rounded corners */
+  }
+  
+  /* Ensure input fields take full width */
+  mat-form-field {
+    width: 100%;
+    margin-bottom: 15px; /* Space between form fields */
+  }
+  
+  /* Button styling */
+  button[mat-raised-button] {
+    display: block;
+    margin: 0 auto 20px auto; /* Center the button and add margin below it */
+  }
