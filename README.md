@@ -1,4 +1,17 @@
-# NbaPlayersUI
+# NBA Players CRUD App - Angular 18 Frontend
+
+This repository contains the frontend code for the NBA Players CRUD application, built using Angular 18. The application allows users to manage NBA player information, including creating, reading, updating, and deleting player records.
+
+## Features
+
+-   **CRUD Operations:** Create, Read, Update, and Delete NBA player information.
+-   **Responsive Design:** The UI is designed to be responsive and user-friendly across various devices.
+-   **Angular Material:** Utilizes Angular Material for a sleek and modern interface.
+-   **Form Validation:** Includes client-side validation for user inputs.
+-   **Service Integration:** Connects with the ASP.NET Core 8 backend API for data persistence.
+
+
+## NbaPlayersUI
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.4.
  
